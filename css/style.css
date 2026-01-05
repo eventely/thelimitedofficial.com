@@ -2,11 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  background-color: #111;
-  color: #fff;
-  font-family: 'Josefin Sans', sans-serif;
+background-color: #fff;   /* White background */
+color: #000;              /* Dark text */
+font-family: 'Josefin Sans', sans-serif;
 }
+
 
 .font-esthetic {
   font-family: 'Sacramento', cursive;
@@ -19,21 +21,21 @@ body {
 }
 
 .color-white {
-  color:#fff;
+  color:#000;
 }
 
 .navbar {
-  background-color: rgba(17, 17, 17, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(5px);
 }
 
 .navbar .nav-link {
   color: #C19A6B;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+  text-shadow: none;
 }
 
 .navbar .nav-link:hover {
-  color: #fff;
+  color: #C19A6B;
 }
 
 .carousel-item img {
@@ -42,7 +44,7 @@ body {
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
 }
 
@@ -50,19 +52,20 @@ body {
   font-size: 3rem;
 }
 
-.btn-custom {
-  background-color: #C19A6B;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 30px;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
-}
 
+.btn-custom {
+   background-color: #C19A6B;
+   color: #fff;
+   font-weight: bold;
+   border-radius: 30px;
+   padding: 10px 20px;
+   transition: all 0.3s ease;
+ }
 .btn-custom:hover {
-  background-color: #fff;
-  color: #111;
-}
+   background-color: #b4855b; /* Slight darken for hover */
+   color: #fff;
+ }
+
 
 .category-card img {
   width: 100%;
@@ -75,8 +78,8 @@ body {
 }
 
 footer {
-  background-color: #111;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: #000;
 }
 
 /* Timeline Styling */
@@ -95,7 +98,7 @@ footer {
   left: 0;
   right: 0;
   height: 4px;
-  background: #6c757d;
+  background: #e0e0e0;
   z-index: 0;
   border-radius: 50px;
 }
@@ -112,20 +115,22 @@ footer {
   transform: translateY(-10px);
 }
 
+
 .timeline-circle {
-  width: 80px;
-  height: 80px;
-  background: #6c757d;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin: 0 auto 15px;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+   width: 80px;
+   height: 80px;
+   background: #f0f0f0;
+   color: #000;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   margin: 0 auto 15px;
+   position: relative;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+
 
 .timeline-img {
   width: 100%;
@@ -141,7 +146,7 @@ footer {
 
 .timeline-item p {
   font-size: 14px;
-  color: #ddd;
+  color: #333;
 }
 
 @media (max-width: 768px) {
